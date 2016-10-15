@@ -1,0 +1,6 @@
+{
+  "name": "Marshalling",
+  "tagline": "Marshalling rounds up your data from client to server.",
+  "body": "### Welcome to Marshalling.\r\nMarshalling is a Typescript framework that makes it easy to handle data and data malipulation from a UI to web service response.\r\n\r\nIn a nutshell Marshalling is a dispatch and listerner framework using UI, Commands, Delegates, Services and Events.\r\n\r\n### Authors and Contributors\r\nMarshal Paterson [LinkedIn](https://au.linkedin.com/in/mpaterson)\r\n\r\nMIT License",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
