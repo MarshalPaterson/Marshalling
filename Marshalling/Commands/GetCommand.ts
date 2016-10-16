@@ -13,7 +13,7 @@ class GetCommand implements Marshalling.IMarshallResponser, Marshalling.Marshall
     public onResult(event: any): void {
         var customDispatcher = Marshalling.MarshallEventDispatcher.getInstance();
 
-        Marshalling.MarshallLaw.getInstance().publicOrder("resultHtml", "<i>"+event+"</i> With HTML", "html");
+        Marshalling.MarshallLaw.getInstance().publicOrder("resultHtml", "<i>"+event+"</i> with HTML!", "html");
         Marshalling.MarshallLaw.getInstance().publicOrder("result", event);
     }
     public onFault(event: any): void {

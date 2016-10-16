@@ -12,7 +12,7 @@ var GetCommand = (function () {
     };
     GetCommand.prototype.onResult = function (event) {
         var customDispatcher = Marshalling.MarshallEventDispatcher.getInstance();
-        Marshalling.MarshallLaw.getInstance().publicOrder("resultHtml", "<i>" + event + "</i> With HTML", "html");
+        Marshalling.MarshallLaw.getInstance().publicOrder("resultHtml", "<i>" + event + "</i> with HTML!", "html");
         Marshalling.MarshallLaw.getInstance().publicOrder("result", event);
     };
     GetCommand.prototype.onFault = function (event) {

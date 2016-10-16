@@ -12,9 +12,11 @@ var PostCommand = (function () {
     };
     PostCommand.prototype.onResult = function (event) {
         var customDispatcher = Marshalling.MarshallEventDispatcher.getInstance();
+        Marshalling.MarshallLaw.getInstance().publicOrder("resultHtml", "<i>" + event + "</i> with HTML!", "html");
         Marshalling.MarshallLaw.getInstance().publicOrder("result", event);
     };
     PostCommand.prototype.onFault = function (event) {
+        //TODO
     };
     return PostCommand;
 }());

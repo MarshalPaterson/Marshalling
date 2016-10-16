@@ -1,1 +1,1 @@
-The text has returned via GET!
+The text has returned via GET

@@ -12,9 +12,10 @@ class PostCommand implements Marshalling.IMarshallResponser, Marshalling.Marshal
     }
     public onResult(event: any): void {
         var customDispatcher = Marshalling.MarshallEventDispatcher.getInstance();
+        Marshalling.MarshallLaw.getInstance().publicOrder("resultHtml", "<i>"+event+"</i> with HTML!", "html");
         Marshalling.MarshallLaw.getInstance().publicOrder("result", event);
     }
     public onFault(event: any): void {
-        
+        //TODO
     }
 }

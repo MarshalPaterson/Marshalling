@@ -1,3 +1,11 @@
+/*
+
+ * Marshalling 3.2.3
+ * https://marshalpaterson.github.io/Marshalling/
+ * MIT License
+ * Copyright (c) 2016 MarshalPaterson
+ *
+ * */
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -77,7 +85,6 @@ var Marshalling;
         MarshallEventDispatcher.prototype.removeEventListener = function (theEvent, theHandler) {
             // TODO
         };
-        // send event to a handler
         MarshallEventDispatcher.prototype.dispatchEvent = function (theEvent) {
             if (Marshall.getInstance().engine[theEvent.data])
                 Marshall.getInstance().engine[theEvent.data].prototype.execute(theEvent.MarshallEvent(theEvent.data));
