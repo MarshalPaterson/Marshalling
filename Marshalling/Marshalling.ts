@@ -1,8 +1,17 @@
-﻿namespace Marshalling {
+﻿/*
+
+ * Marshalling 3.2.3
+ * https://marshalpaterson.github.io/Marshalling/
+ * MIT License
+ * Copyright (c) 2016 MarshalPaterson
+ *
+ * */
+
+namespace Marshalling {
 
     export class Marshall {
 
-        public engine:Array<any> = new Array();
+        public engine: Array<any> = new Array();
 
         private static instance: Marshall;
 
@@ -14,7 +23,7 @@
         }
 
         addMarshallingCommand(name, o) {
-            if(name!=""){
+            if (name != "") {
                 Marshall.getInstance().engine[name] = o;
                 MarshallEventDispatcher.getInstance().addListener(name, o);
             }
@@ -44,14 +53,15 @@
         add(name, url) {
             MarshallService.getInstance().url[name] = url;
         }
+
         get(name) {
             return MarshallService.getInstance().url[name];
         }
     }
 
     export class MarshallDelegate {
-        service:Marshalling.MarshallService;
-        responder:Marshalling.IMarshallResponser;
+        service: Marshalling.MarshallService;
+        responder: Marshalling.IMarshallResponser;
     }
 
     export class MarshallCommand {
@@ -79,7 +89,6 @@
             // TODO
         }
 
-        // send event to a handler
         public dispatchEvent(theEvent: any) {
             if (Marshall.getInstance().engine[theEvent.data])
                 Marshall.getInstance().engine[theEvent.data].prototype.execute(theEvent.MarshallEvent(theEvent.data));
@@ -89,14 +98,13 @@
         }
     }
 
-    export class MarshallEvent extends Object{
-        public data:any;
+    export class MarshallEvent extends Object {
+        public data: any;
 
-        MarshallEvent (type:string, bubbles:boolean = true, cancelable:boolean = false )
-        {
-            var ei:Object = new Object() as EventInit;
+        MarshallEvent(type: string, bubbles: boolean = true, cancelable: boolean = false) {
+            var ei: Object = new Object() as EventInit;
             (ei as EventInit).bubbles = bubbles;
-            (ei as EventInit).cancelable= cancelable;
+            (ei as EventInit).cancelable = cancelable;
             return new CustomEvent(type, ei);
         }
     }
@@ -112,8 +120,7 @@
         }
     }
 
-    export interface IMarshallModelLocator
-    {
+    export interface IMarshallModelLocator {
     }
 
     export interface IMarshallResponser {
@@ -180,17 +187,17 @@
             };
         }
 
-        public load(e, html, div){
-        var xhr = new XMLHttpRequest();
-        xhr.onreadystatechange = function(e) {
-            if(xhr.readyState == 4 && xhr.status == 200) {
-                document.getElementById(div).innerHTML = xhr.responseText;
+        public load(e, html, div) {
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function (e) {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    document.getElementById(div).innerHTML = xhr.responseText;
+                }
             }
-        }
 
-        xhr.open("GET",html, true);
-        xhr.setRequestHeader('Content-type', 'text/html');
-        xhr.send();
-    }
+            xhr.open("GET", html, true);
+            xhr.setRequestHeader('Content-type', 'text/html');
+            xhr.send();
+        }
     }
 }
