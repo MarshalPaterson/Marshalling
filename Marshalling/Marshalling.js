@@ -86,8 +86,8 @@ var Marshalling;
             // TODO
         };
         MarshallEventDispatcher.prototype.dispatchEvent = function (theEvent) {
-            if (Marshall.getInstance().engine[theEvent.data])
-                Marshall.getInstance().engine[theEvent.data].prototype.execute(theEvent.MarshallEvent(theEvent.data));
+            if (Marshall.getInstance().engine[theEvent.type])
+                Marshall.getInstance().engine[theEvent.type].prototype.execute(theEvent.MarshallEvent(theEvent));
             else {
                 dispatchEvent(theEvent.MarshallEvent(theEvent.data));
             }
@@ -100,13 +100,14 @@ var Marshalling;
         function MarshallEvent() {
             _super.apply(this, arguments);
         }
-        MarshallEvent.prototype.MarshallEvent = function (type, bubbles, cancelable) {
+        MarshallEvent.prototype.MarshallEvent = function (e, bubbles, cancelable) {
             if (bubbles === void 0) { bubbles = true; }
             if (cancelable === void 0) { cancelable = false; }
             var ei = new Object();
             ei.bubbles = bubbles;
             ei.cancelable = cancelable;
-            return new CustomEvent(type, ei);
+            ei["detail"] = e.data;
+            return new CustomEvent(e.type, ei);
         };
         return MarshallEvent;
     }(Object));

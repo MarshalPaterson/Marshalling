@@ -5,12 +5,14 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 ///<reference path="../Marshalling.ts"/>
 ///<reference path="../Controls/DemoAppController.ts"/>
-var AnotherGetEvent = (function (_super) {
-    __extends(AnotherGetEvent, _super);
-    function AnotherGetEvent(data) {
-        _super.call(this, DemoAppController.ANOTHER_EVENT_CUSTOM);
+var PostEvent = (function (_super) {
+    __extends(PostEvent, _super);
+    function PostEvent(type, data) {
+        if (data === void 0) { data = null; }
+        _super.call(this);
+        this.type = type;
         this.data = data;
     }
-    return AnotherGetEvent;
+    return PostEvent;
 }(Marshalling.MarshallEvent));
 //# sourceMappingURL=PostEvent.js.map

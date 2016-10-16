@@ -1,12 +1,14 @@
 ///<reference path="../Marshalling.ts"/>
 ///<reference path="../Controls/DemoAppController.ts"/>
-class AnotherGetEvent extends Marshalling.MarshallEvent {
+class PostEvent extends Marshalling.MarshallEvent {
 
     public data:any;
+    public type:string;
 
-    constructor(data:any)
+    constructor(type:string, data:any=null)
     {
-        super(DemoAppController.ANOTHER_EVENT_CUSTOM);
+        super();
+        this.type = type;
         this.data	=	data;
     }
 }

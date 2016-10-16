@@ -13,7 +13,7 @@ function getCustomCall() {
 }
 function getPostCall() {
     var customDispatcher = Marshalling.MarshallEventDispatcher.getInstance();
-    var customEventWithCommand = new GetEvent(DemoAppController.ANOTHER_EVENT_CUSTOM);
+    var customEventWithCommand = new PostEvent(DemoAppController.ANOTHER_EVENT_CUSTOM, "some param text");
     customDispatcher.dispatchEvent(customEventWithCommand);
 }
 //# sourceMappingURL=DemoApp.js.map

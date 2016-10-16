@@ -4,7 +4,7 @@
 class DemoAppController {
     private static customMarshalling = Marshalling.Marshall.getInstance();
 
-    public static EVENT_CUSTOM:string="evetnCustom";
+    public static EVENT_CUSTOM:string="eventCustom";
     public static ANOTHER_EVENT_CUSTOM:string="anotherEventCustom";
 
     public static init() {

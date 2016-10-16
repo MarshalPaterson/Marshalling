@@ -6,9 +6,9 @@
 
 
 class PostCommand implements Marshalling.IMarshallResponser, Marshalling.MarshallCommand {
-    public execute(name:any): void {
+    public execute(event:any): void {
         var delegate:GetDelegate = new GetDelegate();
-        delegate.PostCall(this.onResult, "get the data");
+        delegate.PostCall(this.onResult, event.detail);
     }
     public onResult(event: any): void {
         var customDispatcher = Marshalling.MarshallEventDispatcher.getInstance();

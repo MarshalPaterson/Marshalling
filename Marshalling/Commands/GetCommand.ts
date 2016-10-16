@@ -6,9 +6,9 @@
 
 
 class GetCommand implements Marshalling.IMarshallResponser, Marshalling.MarshallCommand {
-    public execute(name:any): void {
+    public execute(event:any): void {
         var delegate:GetDelegate = new GetDelegate();
-        delegate.GetCall(this.onResult, "get the data");
+        delegate.GetCall(this.onResult, event.detail);
     }
     public onResult(event: any): void {
         var customDispatcher = Marshalling.MarshallEventDispatcher.getInstance();

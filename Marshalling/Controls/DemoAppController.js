@@ -9,7 +9,7 @@ var DemoAppController = (function () {
         this.customMarshalling.addMarshallingCommand(this.ANOTHER_EVENT_CUSTOM, PostCommand);
     };
     DemoAppController.customMarshalling = Marshalling.Marshall.getInstance();
-    DemoAppController.EVENT_CUSTOM = "evetnCustom";
+    DemoAppController.EVENT_CUSTOM = "eventCustom";
     DemoAppController.ANOTHER_EVENT_CUSTOM = "anotherEventCustom";
     return DemoAppController;
 }());

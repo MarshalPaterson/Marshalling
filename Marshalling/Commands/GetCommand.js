@@ -6,9 +6,9 @@
 var GetCommand = (function () {
     function GetCommand() {
     }
-    GetCommand.prototype.execute = function (name) {
+    GetCommand.prototype.execute = function (event) {
         var delegate = new GetDelegate();
-        delegate.GetCall(this.onResult, "get the data");
+        delegate.GetCall(this.onResult, event.detail);
     };
     GetCommand.prototype.onResult = function (event) {
         var customDispatcher = Marshalling.MarshallEventDispatcher.getInstance();

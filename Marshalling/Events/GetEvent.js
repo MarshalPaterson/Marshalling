@@ -7,8 +7,10 @@ var __extends = (this && this.__extends) || function (d, b) {
 ///<reference path="../Controls/DemoAppController.ts"/>
 var GetEvent = (function (_super) {
     __extends(GetEvent, _super);
-    function GetEvent(data) {
-        _super.call(this, DemoAppController.EVENT_CUSTOM);
+    function GetEvent(type, data) {
+        if (data === void 0) { data = null; }
+        _super.call(this);
+        this.type = type;
         this.data = data;
     }
     return GetEvent;

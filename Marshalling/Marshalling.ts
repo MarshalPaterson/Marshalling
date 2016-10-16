@@ -90,8 +90,8 @@ namespace Marshalling {
         }
 
         public dispatchEvent(theEvent: any) {
-            if (Marshall.getInstance().engine[theEvent.data])
-                Marshall.getInstance().engine[theEvent.data].prototype.execute(theEvent.MarshallEvent(theEvent.data));
+            if (Marshall.getInstance().engine[theEvent.type])
+                Marshall.getInstance().engine[theEvent.type].prototype.execute(theEvent.MarshallEvent(theEvent));
             else {
                 dispatchEvent(theEvent.MarshallEvent(theEvent.data));
             }
@@ -101,11 +101,12 @@ namespace Marshalling {
     export class MarshallEvent extends Object {
         public data: any;
 
-        MarshallEvent(type: string, bubbles: boolean = true, cancelable: boolean = false) {
+        MarshallEvent(e: any, bubbles: boolean = true, cancelable: boolean = false) {
             var ei: Object = new Object() as EventInit;
             (ei as EventInit).bubbles = bubbles;
             (ei as EventInit).cancelable = cancelable;
-            return new CustomEvent(type, ei);
+            ei["detail"] = e.data;
+            return new CustomEvent(e.type, ei);
         }
     }
 

@@ -3,10 +3,12 @@
 class GetEvent extends Marshalling.MarshallEvent {
 
     public data:any;
+    public type:string;
 
-    constructor(data:any)
+    constructor(type:string, data:any=null)
     {
-        super(DemoAppController.EVENT_CUSTOM);
+        super();
+        this.type = type;
         this.data	=	data;
     }
 }

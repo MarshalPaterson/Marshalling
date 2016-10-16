@@ -6,9 +6,9 @@
 var PostCommand = (function () {
     function PostCommand() {
     }
-    PostCommand.prototype.execute = function (name) {
+    PostCommand.prototype.execute = function (event) {
         var delegate = new GetDelegate();
-        delegate.PostCall(this.onResult, "get the data");
+        delegate.PostCall(this.onResult, event.detail);
     };
     PostCommand.prototype.onResult = function (event) {
         var customDispatcher = Marshalling.MarshallEventDispatcher.getInstance();
