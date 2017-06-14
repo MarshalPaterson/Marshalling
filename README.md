@@ -9,11 +9,9 @@ Tested with Typescript 1.8.10, prior knowledge of Typescript is needed. Tested w
 
 To run local:
 
-git clone https://github.com/MarshalPaterson/Marshalling.git
-
-cd Marshalling
-
-npm start
+> git clone https://github.com/MarshalPaterson/Marshalling.git
+> cd Marshalling
+> npm start
 
 Or on Heroku
 
