@@ -5,7 +5,7 @@ var DemoAppService = (function () {
     }
     DemoAppService.init = function () {
         Marshalling.MarshallService.getInstance().add("GetService", "MockTestResult.txt");
-        Marshalling.MarshallService.getInstance().add("PostService", "PostMockTestResult.txt");
+        Marshalling.MarshallService.getInstance().add("PostService", "PostMockTestResult");
     };
     return DemoAppService;
 }());

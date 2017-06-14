@@ -3,6 +3,6 @@
 class DemoAppService{
     static init() {
         Marshalling.MarshallService.getInstance().add("GetService", "MockTestResult.txt");
-        Marshalling.MarshallService.getInstance().add("PostService", "PostMockTestResult.txt");
+        Marshalling.MarshallService.getInstance().add("PostService", "PostMockTestResult");
     }
 }
