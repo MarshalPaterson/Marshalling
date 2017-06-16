@@ -19,4 +19,4 @@ Or on Heroku
 
 # Example @ https://marshalling.herokuapp.com
 
-Currently working on the next version that works with React, NPM pacakge may not work at the moment.
+Currently working with React and a Marshalling NPM pacakge.
