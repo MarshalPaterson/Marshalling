@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist/",
+        "sourceMap": true,
+        "noImplicitAny": true,
+        "target": "es6",
+        "allowJs": true,
+        "jsx": "react",
+        "watch": true,
+        "lib": [
+            "dom",
+            "es2015",
+            "es5",
+            "es6"
+        ]
+    },
+    "include": [
+        "./Views/**/*",
+        "./Marshalling/**/*"
+    ]
+}

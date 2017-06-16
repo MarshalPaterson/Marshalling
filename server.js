@@ -3,7 +3,6 @@ var express = require('express'),
     app = express();
 
 app.use(express.static(path.join(__dirname, '/')));
-
 app.get('/', function (req, res) {
     res.redirect('index.html');
 });

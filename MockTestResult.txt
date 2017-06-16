@@ -1,1 +1,9 @@
-The text has returned via GET
+<h1>Marshalling has returned text via GET with React Components!</h1>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ergo ita: non posse honeste vivi, nisi honeste vivatur? Sapiens autem semper beatus est et est aliquando in dolore; Qui non moveatur et offensione turpitudinis et comprobatione honestatis? Tecum optime, deinde etiam cum mediocri amico. Nam, ut sint illa vendibiliora, haec uberiora certe sunt. Quodcumque in mentem incideret, et quodcumque tamquam occurreret. Pauca mutat vel plura sane; Duo Reges: constructio interrete. Ergo omni animali illud, quod appetiti positum est in eo, quod naturae est accommodatum. Sed quid minus probandum quam esse aliquem beatum nec satis beatum? </p>
+
+<p>Illis videtur, qui illud non dubitant bonum dicere -; Quid ergo attinet gloriose loqui, nisi constanter loquare? Non autem hoc: igitur ne illud quidem. Omnium enim rerum principia parva sunt, sed suis progressionibus usa augentur nec sine causa; Aut haec tibi, Torquate, sunt vituperanda aut patrocinium voluptatis repudiandum. Suam denique cuique naturam esse ad vivendum ducem. </p>
+
+<p>Vitiosum est enim in dividendo partem in genere numerare. Quid de Platone aut de Democrito loquar? Primum cur ista res digna odio est, nisi quod est turpis? Quid ei reliquisti, nisi te, quoquo modo loqueretur, intellegere, quid diceret? Vide, quantum, inquam, fallare, Torquate. Ad eas enim res ab Epicuro praecepta dantur. Sint modo partes vitae beatae. </p>
+
+<p>Satisne vobis videor pro meo iure in vestris auribus commentatus? Theophrasti igitur, inquit, tibi liber ille placet de beata vita? An hoc usque quaque, aliter in vita? Quis enim potest ea, quae probabilia videantur ei, non probare? Bestiarum vero nullum iudicium puto. Illa tamen simplicia, vestra versuta. Sed quoniam et advesperascit et mihi ad villam revertendum est, nunc quidem hactenus; </p>
