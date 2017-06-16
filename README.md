@@ -7,6 +7,16 @@ Included is a demo application that has UI, events, commands, delegates, control
 
 Tested with Typescript 1.8.10, prior knowledge of Typescript is needed. Tested with Visual Studio 2015 and IntelliJ 2016.
 
-Needs to run over http.
+To run local:
+
+> git clone https://github.com/MarshalPaterson/Marshalling.git
+
+> cd Marshalling
+
+> npm start
+
+Or on Heroku
 
 # Example @ https://marshalling.herokuapp.com
+
+Currently working on the next version that works with React, NPM pacakge may not work at the moment.
