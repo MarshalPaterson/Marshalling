@@ -4,4 +4,4 @@ THIS IS UNDER A MAJOR NEW VERSION AND IS CURRENTLY BROKEN, please review branch 
 
 https://github.com/MarshalPaterson/Marshalling/tree/3.5.0
 
-Marshalling is a middleware for React!
+Marshalling is a Typescript Framework for React Native!
