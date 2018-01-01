@@ -6,7 +6,7 @@
  *
  * */
 
-namespace Marshalling {
+export namespace Marshalling {
 
     export class Marshall {
 
@@ -32,9 +32,9 @@ namespace Marshalling {
             return Marshall.getInstance().engine[name];
         }
 
-        remove(o:any) {
-            delete this.engine.indexOf(o);
-        }
+        // remove(o:any) {
+        //     delete this.engine.indexOf(o);
+        // }
     }
 
     export class MarshallService {
@@ -65,12 +65,16 @@ namespace Marshalling {
 
     export class MarshallCommand {
         public execute(name) {
-
+            console.log(name);
         };
     }
 
     export class MarshallEventDispatcher implements IMarshallInforcer {
-        private eventHandlers = {};
+        removeEventListener(name: string, handler: any) {
+            console.log(name + handler);
+            throw new Error("Method not implemented.");
+        }
+        // private eventHandlers = {};
         protected static instance: MarshallEventDispatcher;
 
         public static getInstance(): MarshallEventDispatcher {
@@ -84,9 +88,9 @@ namespace Marshalling {
             addEventListener(name, handler);
         }
 
-        removeEventListener(theEvent: string, theHandler: any) {
-            // TODO
-        }
+        // removeEventListener(theEvent: string, theHandler: any) {
+        //     // TODO
+        // }
 
         public dispatchEvent(theEvent: any) {
             if (Marshall.getInstance().engine[theEvent.type])
@@ -193,8 +197,9 @@ namespace Marshalling {
                 if (xhr.readyState == 4 && xhr.status == 200) {
                     document.getElementById(div).innerHTML = xhr.responseText;
                 }
+                console.log(e);
             }
-
+            console.log(e);
             xhr.open("GET", html, true);
             xhr.setRequestHeader('Content-type', 'text/html');
             xhr.send();
