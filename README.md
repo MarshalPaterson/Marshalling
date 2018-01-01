@@ -1,4 +1,7 @@
 # Marshalling
+
+THIS IS UNDER A MAJOR NEW VERSION, please review branch 3.5.0 for older versions
+
 Marshalling is a event and listen framework for Typescript.
 
 Simply add "Marshalling.ts" to your Typescript project.
