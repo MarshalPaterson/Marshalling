@@ -16,5 +16,6 @@
   "bugs": {
     "url": "https://github.com/MarshalPaterson/Marshalling/issues"
   },
-  "homepage": "https://github.com/MarshalPaterson/Marshalling#readme"
+  "homepage": "https://github.com/MarshalPaterson/Marshalling#readme",
+  "readme": "README.md"
 }
