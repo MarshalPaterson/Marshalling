@@ -1,7 +1,16 @@
 # Marshalling
+Version 4.0.19 is the latest release.
+Marshalling serving data from server to client!
+Marshalling is a Typescript Framework for React Native!
 
-THIS IS UNDER A MAJOR NEW VERSION AND IS CURRENTLY BROKEN, please review branch 3.5.0 for older versions.
+To use with your next React Native simply install by:
+```npm install marshalling```
+
+Please note that Marshalling is written in Typescript it is important that your project and render tsc. A good article can be read at https://medium.com/@rintoj/react-native-with-typescript-40355a90a5d7
+
+To use the latest version of Marshalling please download and review the demo at:
+https://github.com/MarshalPaterson/Marshalling-ReactNative
+
+For older version please review branch 3.5.0 for older versions.
 
 https://github.com/MarshalPaterson/Marshalling/tree/3.5.0
-
-Marshalling is a Typescript Framework for React Native!
