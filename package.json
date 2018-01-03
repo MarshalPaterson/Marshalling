@@ -1,11 +1,14 @@
 {
   "name": "marshalling",
-  "version": "4.0.17",
+  "version": "4.0.18",
   "description": "Marshalling ",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm version patch --force | npm publish | git push"
+    "build": "npm version patch --force | npm publish | git push",
+    "tsc": "tsc",
+    "clean": "rimraf artifacts",
+    "buildtsc": "npm run clean && npm run tsc --"
   },
   "repository": {
     "type": "git",
