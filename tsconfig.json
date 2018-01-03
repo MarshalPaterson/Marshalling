@@ -5,7 +5,7 @@
       "moduleResolution": "node",
       "jsx": "react",
       "outDir": "artifacts",
-      "rootDir": "src",
+      "rootDir": "index.tsx",
       "allowSyntheticDefaultImports": true,
       "noImplicitAny": false,
       "preserveConstEnums": true,
@@ -18,8 +18,8 @@
     },
     "filesGlob": [
       "typings/index.d.ts",
-      "**/*.ts",
-      "**/*.tsx"
+      "*.ts",
+      "*.tsx"
     ],
     "types": [
       "react",
