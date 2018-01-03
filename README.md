@@ -1,6 +1,6 @@
 # Marshalling
-Version 4.0.19 is the latest release.
-Marshalling serving data from server to client!
+The most stable version is 4.0.19 and above.
+Marshalling serving data from server response to client!
 Marshalling is a Typescript Framework for React Native!
 
 To use with your next React Native simply install by:
@@ -8,9 +8,35 @@ To use with your next React Native simply install by:
 
 Please note that Marshalling is written in Typescript it is important that your project can render tsc. A good article can be read at https://medium.com/@rintoj/react-native-with-typescript-40355a90a5d7
 
-To use the latest version of Marshalling please download and review the demo at:
+Please feel free to download the demo application of Marshalling from:
 https://github.com/MarshalPaterson/Marshalling-ReactNative
 
-For older version please review branch 3.5.0.
+Usage:
+```import * as Marshalling from "marshalling";```
 
+Create an instance within your class:
+```public marshalling = new Marshalling.Marshall();```
+
+In componentDidMount set the method signatures of name and service api endpoint. Then call the end via the 'law' method. The 'law' method is a Promise method that you assign your callback functions, the example below you can see on success it handles the responses with a 'value' arrow function and on error in 'reason' arrow function. The endpoint returns a JSON can be parsed into a object then set to state.
+
+```
+componentDidMount() {
+    this.marshalling.getInstance().addService('tester', 'https://jsonplaceholder.typicode.com/comments');
+    this.marshalling.getInstance().law('tester').then(
+     (value) => {
+        let obj = JSON.parse(String(value));
+        this.setState({
+          data: obj[0].name
+        });
+    },
+    (reason) => {
+        console.error('Something went wrong', reason);
+    });
+  }
+```
+
+Marshalling implements the Singleton pattern.
+
+
+For older version please review branch 3.5.0.
 https://github.com/MarshalPaterson/Marshalling/tree/3.5.0
