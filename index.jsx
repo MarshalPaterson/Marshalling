@@ -8,10 +8,7 @@ export class Marshall {
             this.instance = new Marshall();
 
         return this.instance;
-    }
-    public helloWorld() {
-        return "Hello World"
-        } 
+    } 
     public addService(name, url) {
         if(this.register===undefined){
             this.register = new Array();
