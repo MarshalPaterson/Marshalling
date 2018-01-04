@@ -21,27 +21,35 @@ export class Marshall {
     getService(name) {
         return this.register[name];
     }
-    law(name, method = 'GET') {
+    law(name, method = 'GET', data = undefined) {
         return __awaiter(this, void 0, void 0, function* () {
+            method = method.toUpperCase();
             let url = this.getService(name);
             return yield new Promise(function (resolve, reject) {
-                var request = new XMLHttpRequest();
+                let request = new XMLHttpRequest();
+                let params = '';
+                if (data !== undefined && data !== null)
+                    params = (typeof data == 'string') ? data : Object.keys(data).map(function (k) { return encodeURIComponent(k) + '=' + encodeURIComponent(this.data[k]); }).join('&');
+                request.open(method, url);
                 request.onreadystatechange = function () {
-                    if (this.readyState === 4 && this.status === 200) {
-                        // Success
+                    if (this.readyState === 4 && (this.status === 200 || this.status === 201)) {
                         if (this.response !== "")
                             resolve(this.response);
                     }
                     else if (this.readyState === 4 && this.status !== 0) {
-                        // Something went wrong (404 etc.)
                         reject(new Error(this.statusText));
                     }
                 };
                 request.onerror = function () {
                     reject(new Error('XMLHttpRequest Error: ' + this.statusText));
                 };
-                request.open(method, url);
-                request.send();
+                if (method === 'POST') {
+                    request.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
+                    request.send(params);
+                }
+                else {
+                    request.send();
+                }
             });
         });
     }
