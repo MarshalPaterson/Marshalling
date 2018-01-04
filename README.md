@@ -11,7 +11,9 @@ Please note that Marshalling is written in Typescript it is important that your 
 Please feel free to download the demo application of Marshalling from:
 https://github.com/MarshalPaterson/Marshalling-ReactNative
 
-Usage:
+The demo application has an example for 'GET' and 'POST'. Support for CRUD is still under development.
+
+General Usage:
 ```import * as Marshalling from "marshalling";```
 
 Create an instance within your class:
@@ -35,7 +37,7 @@ componentDidMount() {
   }
 ```
 
-Marshalling implements the Singleton pattern.
+Marshalling implements the Singleton pattern. If you are not using Typescript you can still reference Marshalling in a normal ES6 Javascript project.
 
 
 For older version please review branch 3.5.0.
