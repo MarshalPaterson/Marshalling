@@ -1,6 +1,6 @@
 {
   "name": "marshalling",
-  "version": "4.0.22",
+  "version": "4.0.23",
   "description": "Marshalling ",
   "main": "index.js",
   "scripts": {
