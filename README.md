@@ -42,3 +42,5 @@ Marshalling implements the Singleton pattern. If you are not using Typescript yo
 
 For older version please review branch 3.5.0.
 https://github.com/MarshalPaterson/Marshalling/tree/3.5.0
+
+Join Marshalling on LinkedIn at https://www.linkedin.com/groups/13534575
