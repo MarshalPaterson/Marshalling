@@ -39,6 +39,8 @@ componentDidMount() {
 
 Marshalling implements the Singleton pattern. If you are not using Typescript you can still reference Marshalling in a normal ES6 Javascript project.
 
+NOTE: Be mindful on the scope of the 'marshalling' variable, you may or may not need to use 'this.' keyword.
+
 
 For older version please review branch 3.5.0.
 https://github.com/MarshalPaterson/Marshalling/tree/3.5.0
