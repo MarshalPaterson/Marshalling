@@ -46,3 +46,6 @@ For older version please review branch 3.5.0.
 https://github.com/MarshalPaterson/Marshalling/tree/3.5.0
 
 Join Marshalling on LinkedIn at https://www.linkedin.com/groups/13534575
+
+For a demo that works with React Native, Marshalling, React Navigation and The Granary please go here: https://github.com/MarshalPaterson/TheGranaryMarshallingNavigation
+
