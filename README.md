@@ -1,5 +1,4 @@
-[![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php) [![npm](https://img.shields.io/npm/dt/marshalling.svg)](https://www.npmjs.com/package/marshalling) [![Build Status](https://travis-ci.org/MarshalPaterson/Marshalling.svg?branch=master)](https://travis-ci.org/MarshalPaterson/Marshalling) 
-![npm](https://img.shields.io/npm/v/marshalling.svg)
+[![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php) ![npm](https://img.shields.io/npm/v/marshalling.svg) [![npm](https://img.shields.io/npm/dt/marshalling.svg)](https://www.npmjs.com/package/marshalling) [![Build Status](https://travis-ci.org/MarshalPaterson/Marshalling.svg?branch=master)](https://travis-ci.org/MarshalPaterson/Marshalling)
 
 
 # Marshalling
