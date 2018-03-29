@@ -1,4 +1,6 @@
-[![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php) [![Github All Releases](https://img.shields.io/github/downloads/marshalpaterson/marshalling/total.svg)]() [![Build Status](https://travis-ci.org/MarshalPaterson/Marshalling.svg?branch=master)](https://travis-ci.org/MarshalPaterson/Marshalling)
+[![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php) [![npm](https://img.shields.io/npm/dt/marshalling.svg)](https://www.npmjs.com/package/marshalling) [![Build Status](https://travis-ci.org/MarshalPaterson/Marshalling.svg?branch=master)](https://travis-ci.org/MarshalPaterson/Marshalling) 
+![npm](https://img.shields.io/npm/v/marshalling.svg)
+
 
 # Marshalling
 The most stable version is 4.0.19 and above.
