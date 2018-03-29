@@ -4,7 +4,7 @@
   "description": "Marshalling ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "build": "npm version patch --force | npm publish | git push",
     "tsc": "tsc",
     "clean": "rimraf artifacts",
@@ -21,11 +21,22 @@
   },
   "homepage": "https://github.com/MarshalPaterson/Marshalling#readme",
   "readme": "README.md",
+  "dependencies": {
+    "marshalling": "^4.0.23",
+    "react": "16.0.0",
+    "react-dom": "^16.2.0",
+    "react-native": "0.51.0",
+    "tsc": "^1.20150623.0"
+  },
   "devDependencies": {
     "@types/jest": "^22.0.0",
     "@types/react": "^16.0.31",
     "@types/react-native": "^0.51.7",
+    "babel-jest": "22.0.4",
+    "babel-preset-react-native": "4.0.0",
     "concurrently": "^3.5.1",
+    "jest": "^22.4.3",
+    "react-test-renderer": "16.0.0",
     "rimraf": "^2.6.2",
     "tslint": "^5.8.0",
     "typescript": "^2.6.2"
