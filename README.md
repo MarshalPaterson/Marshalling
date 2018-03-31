@@ -41,14 +41,15 @@ componentDidMount() {
 ```
 To have multi-able calls to an API you can simply register the service then call on a promise.all for example:
 ```
-		let marshalling = new Marshalling.Marshall();
-		marshalling.getInstance().addService('comments', 'https://jsonplaceholder.typicode.com/comments');
-		marshalling.getInstance().addService('albums', 'https://jsonplaceholder.typicode.com/albums');
-        
-        Promise.all([marshalling.getInstance().law('comments'),             marshalling.getInstance().law('albums')]).then(function(values) {
-			console.log(values);
-            // handle results here
-		});
+let marshalling = new Marshalling.Marshall();
+marshalling.getInstance().addService('comments', 'https://jsonplaceholder.typicode.com/comments');
+marshalling.getInstance().addService('albums', 'https://jsonplaceholder.typicode.com/albums');
+
+Promise.all([marshalling.getInstance().law('comments'), marshalling.getInstance().law('albums')]).then(function(
+	values
+) {
+	console.log(values);
+});
 ```		
 
 Marshalling implements the Singleton pattern. If you are not using Typescript you can still reference Marshalling in a normal ES6 Javascript project.
