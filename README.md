@@ -39,7 +39,7 @@ componentDidMount() {
     });
   }
 ```
-To have multi-able calls to an API you can simply register the service then call on a promise.all for example:
+To have multiable calls to an API you can simply register the service then call on a promise.all for example:
 ```
 let marshalling = new Marshalling.Marshall();
 marshalling.getInstance().addService('comments', 'https://jsonplaceholder.typicode.com/comments');
